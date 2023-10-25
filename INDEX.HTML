@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Divya- Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cc1433;
+        }
+
+        header {
+            background-color: #0a0a0a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;/*add this*/
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #0c0b0b;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #0a0a0a;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #0a0a0a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #0e0c0c;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="divya19.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1> DIVYA R</h1>
+            <p>COLLEGE STUDENT</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm DIVYA R I am a person with a lot of enthusiasm to learn new things and I follow the motto “Live Life to the Fullest”. I mainly believe that hard work really matters in our progress. With my hard work I was in the top 5 in the school. I continued this hard work and perseverance even in the later stage, so I stood as a topper in the intermediate and mine was the best rank in the college, . But it didn’t obstruct me to go for other activities like participating in several dance competitions and in skits which were held during annual day celebrations in school and college. I also learnt Typewriting for few days but due to some reasons I dropped it. If I have a chance I will continue this in the future. I have presented technical papers during my BSC CS. 2nd and 3rd year. During the technical fest held in our college, I took part in the QUIZ committee and I conducted stalls with my own initiation. I am mainly interested in watching films and I love to listen songs (Filmy) in my leisure time.   </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p></p>Bharathidasan University - Urumu Dhanalakshmi College - Bsc Computer Science</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>JAVA</li>
+                <li>Type Writing (English)</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+            
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+       <div class="section-content">
+
+<h2>Projects</h2>
+            <ul>
+                <li><a href="file:///C:/Users/ELCOT/Desktop/nithish.html">E-Commerce</a></li>
+                <li><a href="file:///C:/Users/ELCOT/Desktop/index.html">Student Registration Form</a></li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+sss
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="divya1019.pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 DIVYA R</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
